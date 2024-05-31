@@ -1,10 +1,7 @@
 # When a release is published, build the assets and upload them
 name: Build release assets
 
-on:
-  release:
-    types:
-      - published
+on: push
 
 jobs:
   # First we define a job with a matrix that will build all relevant assets,
